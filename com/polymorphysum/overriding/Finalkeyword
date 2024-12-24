@@ -1,0 +1,8 @@
+Finl keyword
+
+variable - to mkae constaatnt variable 
+
+method - if you make a mehtof final you cannot override that method 
+
+
+class  - if you make class as final you can not extend that class 

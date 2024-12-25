@@ -14,6 +14,8 @@ public class LinkListTest {
         list.remove(0);
         
 
+
+
         for (Integer list2 : list) {
             System.out.print(list2 + " ");   
         }

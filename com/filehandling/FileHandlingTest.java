@@ -20,6 +20,7 @@ public class FileHandlingTest {
             
             fw.write("this is a best java course \n");
             fw.write("welcome to the loop \n");
+            fw.write("welcome to file writer");
             for (int i = 0; i < 10; i++) {
                 fw.write(" * ");
             }

@@ -11,6 +11,7 @@ public class ListTest {
             list.add(10);
             list.add(50);
             list.add(69);
+            list.add(70);
 
             for (Integer number : list) {
                 System.out.print(number + " ");

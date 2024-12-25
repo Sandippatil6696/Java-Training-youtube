@@ -11,6 +11,8 @@ public class LinkListTest {
         list.add(18);
         list.add(154);
         list.add(120);
+        list.remove(0);
+        
 
         for (Integer list2 : list) {
             System.out.print(list2 + " ");   

@@ -11,6 +11,11 @@ public class VarArgs {
         System.out.println(sum(4,5,6));
         System.out.println(sum(4,5,6,78));
         System.out.println(sum(4,5,6,8,9,45));
+
+        System.out.println(concatenate("sandip"));
+        System.out.println(concatenate("sandip", "hi rahul"));
+        System.out.println(concatenate("sandip", "hellow" , "rahul"));
+
     }
 
     // public static int Sum(int arr[]) {
@@ -30,6 +35,17 @@ public class VarArgs {
         }
         return sum;
 
+    }
+
+
+    public static String concatenate(String... s){
+        StringBuilder sb = new StringBuilder();
+
+        for (String str : s) {
+            sb.append(str).append(" ");
+        }
+
+        return sb.toString() ;
     }
 
 }

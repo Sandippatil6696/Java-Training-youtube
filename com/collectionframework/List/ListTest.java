@@ -1,6 +1,7 @@
 package com.collectionframework.List;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ListTest {
@@ -47,6 +48,34 @@ public class ListTest {
         for (Integer number : list) {
             System.out.print(number + " ");
         }
+        System.out.println();
+        // swapping two element in list 
+        List<Integer> ll = Arrays.asList(21,4,3,56,12,45,7,1);
+        System.out.println(ll);
+        swapInList(ll, 2, 5);
+        System.out.println(ll);
 
+        System.out.println();
+
+        // reverlist 
+        List<Integer> ls = Arrays.asList(2,4,13,6,12,5,17,26);
+        System.out.println(ls);
+        reverseList(ls);
+        System.out.println(ls);
+    }
+
+    //
+    public static void swapInList(List<Integer> l , int x , int y){
+        int swap = l.get(x);
+        l.set(x, l.get(y));
+        l.set(y, swap);
+
+    }
+
+    //reverse list
+    public static void reverseList(List<Integer> l){
+       for (int i = 0; i < l.size()/2; i++) {
+            swapInList(l, i, l.size()-1-i);
+       }
     }
 }
